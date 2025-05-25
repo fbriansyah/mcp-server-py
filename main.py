@@ -4,7 +4,8 @@ from server import mcp
 import tools.csv_tools
 import tools.parquet_tools
 import tools.db_tools
-import tools.config_tools
+# import tools.config
+import tools.transfer_config_tools
 
 # Entry point to run the server
 if __name__ == "__main__":

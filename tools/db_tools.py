@@ -1,5 +1,6 @@
+from models.user import User
 from server import mcp
-from utils.database import User, get_db
+from utils.database import get_db
 from typing import List, Optional
 
 @mcp.tool()
