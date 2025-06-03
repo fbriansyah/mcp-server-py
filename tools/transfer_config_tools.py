@@ -17,6 +17,12 @@ def list_transfer_configs() -> str:
 
 	result = "Transfer Configurations:\n"
 	for config in transfer_configs:
-		result += f"UUID: {config.uuid}, Priority: {config.priority}, Transfer Type: {config.transfer_type}, Bank Name: {config.account.bank_name}, Bank Code: {config.account.bank_code}, Is Active: {config.is_active}\n"
+		result += f"UUID: {config.uuid}\n"
+		result += f"Priority: {config.priority}\n"
+		result += f"Transfer Type: {config.transfer_type}\n"
+		result += f"Bank Name: {config.account.bank_name}\n"
+		result += f"Bank Code: {config.account.bank_code}\n"
+		result += f"Is Active: {config.is_active}\n"
+		result += "\n"
 
 	return result
